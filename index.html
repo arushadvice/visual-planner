@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Visual Planner</h1>
+            <p>Transform your video script into visual insights</p>
+        </div>
+
+        <div class="input-section">
+            <textarea 
+                id="scriptInput" 
+                placeholder="Paste your video script here..."
+                class="script-textarea"
+            ></textarea>
+            <button id="analyzeBtn" class="analyze-btn">Analyze Script</button>
+        </div>
+
+        <div id="loadingSpinner" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Analyzing your script...</p>
+        </div>
+
+        <div id="outputContainer" class="output-section" style="display: none;">
+            <div class="output-header">
+                <h2>Visual Breakdown</h2>
+                <button id="downloadBtn" class="download-btn">Download</button>
+            </div>
+            <div id="outputContent" class="output-content"></div>
+        </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
